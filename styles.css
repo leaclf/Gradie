@@ -1,0 +1,139 @@
+:root {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+a {
+  text-decoration: none;
+}
+svg {
+  vertical-align: middle;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.mockup {
+  background-color: rgb(1, 50, 67);
+  padding: 1em 2em 0;
+}
+.mockup__body {
+  text-align: center;
+}
+.mockup__header {
+  color: #fff;
+  margin: 0 0 0.7rem;
+  font-size: 2rem;
+}
+.mockup__text {
+  color: rgb(134, 191, 211);
+  font-weight: 500;
+  margin: 0;
+}
+.mockup__image {
+  display: block;
+  height: 100%;
+}
+.form {
+  background-color: #fff;
+  padding: 1.5em 3em;
+}
+.form__header {
+  font-size: 2rem;
+}
+.form-control {
+  margin-bottom: 1.5rem;
+}
+.form-control label {
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.form-control input {
+  padding: 1.5em 2em;
+  color: #8d8d8d;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  border: 1px solid rgb(188, 188, 188);
+  width: 100%;
+  outline: 0;
+  border-radius: 8px;
+}
+.terms::after,
+.terms::before {
+  display: table;
+  content: " ";
+}
+.terms::after {
+  clear: both;
+}
+.terms input {
+  float: left;
+  margin-right: 0.8rem;
+  vertical-align: middle;
+}
+.termscond {
+  overflow: hidden;
+  margin: 0;
+}
+.termscond a {
+  font-weight: bold;
+  border-bottom: 3px solid #013243;
+  display: inline-block;
+  color: #013243;
+}
+.btn {
+  padding: 1em 2em;
+  background-color: #013243;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  margin-top: 1rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  body {
+    background-image: url(Background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200vh;
+  }
+  .container {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+    flex-direction: row;
+    max-width: 800px;
+  }
+  .mockup {
+    flex: 1;
+  }
+  .form {
+    flex: 1;
+  }
+}
